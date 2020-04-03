@@ -2,18 +2,18 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gap pixel between windows */
+static const unsigned int gappx     = 8;        /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Iosevka:size=10:antialias=true:hint=true:hintstyle=hintfull; weight=medium: slant=roman: dpi=96" };
+static const char *fonts[]          = { "Iosevka:size=10:antialias=true:hint=true:hintstyle=hintfull; weight=medium: slant=roman: dpi=96", "Font Awesome 5 Free:size=10:antialias=true:hint=true:hintstyle=hintfull; weight=medium: slant=roman: dpi=96" };
 static const char dmenufont[]       = "Iosevka:size=10:antialias=true:hint=true:hintstyle=hintfull; weight=medium: slant=roman: dpi=96";
 static const char col_black[]       = "#000000";
 static const char col_gray1[]       = "#444444";
 static const char col_gray2[]       = "#bbbbbb";
 static const char col_gray3[]       = "#eeeeee";
 static const char col_blue[]        = "#75A4CD";
-static const char col_navygreen[]        = "#687c45";
+static const char col_navygreen[]   = "#687c45";
 static const char col_red[]        = "#8c3028";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = 0xd0;
@@ -30,7 +30,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "dev1", "dev2", "dev3", "web", "read", "misc1", "misc2", "misc3", "misc4" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -49,9 +49,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "tile",      tile },    /* first entry is default */
-	{ "float",      NULL },    /* no layout function means floating behavior */
-	{ "monacle",      monocle },
+	{ "",      tile },    /* first entry is default */
+	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "",      monocle },
 };
 
 /* key definitions */
