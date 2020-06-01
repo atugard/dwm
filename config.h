@@ -15,19 +15,19 @@ static const char col_gray3[]       = "#eeeeee";
 static const char col_blue[]        = "#75A4CD";
 static const char col_navygreen[]   = "#687c45";
 static const char col_red[]        = "#8c3028";
-static const unsigned int baralpha = 0xd0;
-static const unsigned int borderalpha = 0xd0;
+//static const unsigned int baralpha = 0xd0;
+//static const unsigned int borderalpha = 0xd0;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray2, col_black, col_gray1 },
 	[SchemeSel]  = { col_gray3, col_red,  col_red  },
 };
 
-static const unsigned int alphas[][3]      = {
+//static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
-};
+//	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+//	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+//};
 
 /* tagging */
 static const char *tags[] = { " dev", " dev", " dev", " web ", " web", " misc", " misc", " misc", " read"};
