@@ -61,6 +61,7 @@ static char browser[]= "firefox";
 static char editor[]= "emacs";
 static char term[]= "st";
 static char reader[]= "zathura";
+static char communication[]= "telegram-desktop";
 
 /* key definitions */
 #define MODKEY Mod4Mask
@@ -80,6 +81,7 @@ static const char *termcmd[]  = { "tabbed", "-c", "-r", "2", term, "-w", "-e", N
 static const char *emacscmd[]  = { editor, NULL};
 static const char *browsercmd[]  = { browser, NULL};
 static const char *zathuracmd[]  = { "tabbed", "-c", reader, "-e",  NULL};
+static const char *communicationcmd[]  = { communication,  NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -87,6 +89,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return,         spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_z,              spawn,          {.v = zathuracmd } },
 	{ MODKEY,                       XK_backslash,      spawn,          {.v = browsercmd } },
+	{ MODKEY,                       XK_c,              spawn,          {.v = communicationcmd } },
 	{ MODKEY,                       XK_apostrophe,     spawn,          {.v = emacscmd } },
 	{ MODKEY,                       XK_b,              togglebar,      {0} },
 	{ MODKEY,                       XK_j,              focusstack,     {.i = +1 } },
